@@ -1,0 +1,24 @@
+{
+  "name": "wiki-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsonr84-tiy/wiki-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnsonr84-tiy/wiki-website/issues"
+  },
+  "homepage": "https://github.com/johnsonr84-tiy/wiki-website#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1"
+  }
+}
