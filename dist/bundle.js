@@ -2027,7 +2027,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "body {\n  background-color: #CCCC9A; }\n\n.nav-bar {\n  background-color: #999967; }\n", ""]);
 
 // exports
 
