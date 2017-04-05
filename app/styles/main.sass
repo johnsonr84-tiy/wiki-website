@@ -8,21 +8,132 @@ body
 
 
 .nav-bar
-  position: fixed
-  background-color: $app-darkgreen
+  background-color: opacify($app-darkgreen, 1)
   font-size: 12px
   color: white
   word-spacing: 2px
 
-
 li
   display: inline-block
 
-#wildlife-flex
-  background-color: $main-color
+img
+  margin 8px
+  width: 30%
 
-#content-flex
+// slide-viewer
+//   position: relative
+//   overflow: hidden
+//   height: 300px
+//
+// .slide-group
+//   width: 100%
+//   height: 100%
+//   position: relative
+//
+// .slide
+//   width: 100%
+//   height: 100%
+//   display: none
+//   position: absolute
+//
+// .slide: first-child
+//   display: block
+
+#flex-wildlife
+  background-color: lighten($main-color, 15%)
+
+#flex-content
   background-color: $app-lightgrey
+  color: darken($app-darkgreen, 20%)
 
-#footer-flex
+#flex-footer
   background-color: $app-darkgreen
+  font-size: 12px
+
+// vvv flexbox stuffies vvv
+// ======================================
+
+#flex-container
+   display: -ms-inline-flexbox
+    display: -webkit-inline-flex
+    display: inline-flex
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    -webkit-align-content: center
+    -ms-flex-line-pack: center
+    align-content: center
+    -webkit-align-items: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+
+
+
+.flex-nav
+ -webkit-order: 1
+    -ms-flex-order: 1
+    order: 1
+    -webkit-flex: 0 1 auto
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-align-self: auto
+    -ms-flex-item-align: auto
+    align-self: auto
+
+
+
+.flex-slide
+    -webkit-order: 2
+    -ms-flex-order: 2
+    order: 2
+    -webkit-flex: 0 1 auto
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-align-self: auto
+    -ms-flex-item-align: auto
+    align-self: auto
+
+
+
+.flex-wildlife
+    -webkit-order: 3
+    -ms-flex-order: 3
+    order: 3
+    -webkit-flex: 0 1 auto
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-align-self: auto
+    -ms-flex-item-align: auto
+    align-self: auto
+
+
+
+.flex-content
+    -webkit-order: 4
+    -ms-flex-order: 4
+    order: 4
+    -webkit-flex: 0 1 auto
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-align-self: auto
+    -ms-flex-item-align: auto
+    align-self: auto
+
+
+
+.flex-footer
+    -webkit-order: 5
+    -ms-flex-order: 5
+    order: 5
+    -webkit-flex: 0 1 auto
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-align-self: auto
+    -ms-flex-item-align: auto
+    align-self: auto
